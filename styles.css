@@ -343,4 +343,9 @@ a {
     padding-top: 71px ;
 }
 
-
+.logo {
+    height: 70px;
+   position: absolute;
+    right: 30px;
+    width: 100px;
+    }
