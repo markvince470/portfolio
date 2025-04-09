@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Container for the slideshow */
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px; /* Adjust width */
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Hide the radio buttons */
+        input[type="radio"] {
+            display: none;
+        }
+
+        /* Container for the slides */
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        /* Style for each slide */
+        .slide {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Style for the navigation buttons (prev and next) */
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            padding: 16px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            transform: translate(0, -50%);
+            z-index: 1;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        /* Radio buttons for the slides */
+        #slide1:checked ~ .slides {
+            transform: translateX(0);
+        }
+
+        #slide2:checked ~ .slides {
+            transform: translateX(-100%);
+        }
+
+        #slide3:checked ~ .slides {
+            transform: translateX(-200%);
+        }
+
+        /* Label styles (acting as buttons) */
+        label {
+            position: absolute;
+            top: 50%;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+            z-index: 2;
+            transform: translate(0, -50%);
+        }
+
+        /* Position labels for navigation */
+        .prev-label {
+            left: 0;
+        }
+
+        .next-label {
+            right: 0;
+        }
+    .slideshow-container {
+        padding-top: 15%;
+
+    }
+    .slideshow-container {
+        height: 400px;
+        width: 800px;
+        
+    }
+
+    .slides {
+        justify-content: space-around;
+       
+    }
+    p {
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="certificate.html">Certificate</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slideshow-container">
+        <!-- Radio buttons for controlling the slides -->
+        <input type="radio" id="slide1" name="slide" checked>
+        <input type="radio" id="slide2" name="slide">
+        <input type="radio" id="slide3" name="slide">
+
+        <!-- Slideshow images -->
+        <div class="slides">
+            <div class="slide">
+                <img class="box" src="images/Gold and White Elegant Appreciation Certificate.png" alt="Image 1" width="200" height="200">
+                <p>Responsive Web Design (FreeCodeChamp)</p>
+            </div>
+            <div class="slide">
+                <img class="box" src="images/Gold and White Elegant Appreciation Certificate.png" alt="Image 2" width="200" height="200">
+                <p>JavaScript Algorithms And Data Structure (FreeCodeChamp)</p>
+            </div>
+            <div class="slide">
+                <img class="box" src="images/Gold and White Elegant Appreciation Certificate.png" alt="Image 3" width="200" height="200">
+                <p>Data Analysis With Python (FreeCodeChamp)</p>
+            </div>
+            <div class="slide">
+                <img class="box" src="images/Gold and White Elegant Appreciation Certificate.png" alt="Image 1" width="200" height="200">
+                <p>Scientific Computing Python 
+                    (FreeCodeChamp)</p>
+            </div>
+            <div class="slide">
+                <img class="box" src="images/Gold and White Elegant Appreciation Certificate.png" alt="Image 2" width="200" height="200">
+                <p>Data Visualization (FreeCodeChamp)</p>
+            </div>
+            <div class="slide">
+                <img class="box" src="images/Gold and White Elegant Appreciation Certificate.png" alt="Image 3" width="200" height="200">
+                <p>Legacy Full-Stack (FreeCodeChamp)</p>
+            </div>
+            
+        </div>
+        
+
+        <!-- Labels as navigation buttons -->
+        <label for="slide1" class="prev-label">&#10094;</label>
+        <label for="slide2" class="next-label">&#10095;</label>
+    </div>
+    
+    <footer id="our-team">
+        <p> Dalisay, Mark Vincent</p>
+        <p>&copyopyright</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .portfolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .project-card {
+            background-color: #fff;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-card-content {
+            padding: 20px;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .project-description {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .project-links a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .project-links a:hover {
+            color: #0056b3;
+        }
+
+        /* Footer */
+  
+        
+        .conts {
+            text-align: center;
+            padding: 40px;
+      
+        }
+
+        .project-card {
+            padding-top: 71px ;
+        }
+    </style>
+</head>
+<body>
+  
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="certificate.html">Certificate</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="portfolio-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <img src="images/bill.PNG" alt="Hospital Billing System">
+            <div class="project-card-content">
+                <h2 class="project-title">HOSPITAL BILLING SYSTEM</h2>
+                <p class="project-description">This system will compute all the bills you pay.</p>
+                <div class="project-links">
+                    <a href="images/bill.PNG" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <img src="images/employers.PNG" alt="Company Earnings and Deductions System">
+            <div class="project-card-content">
+                <h2 class="project-title">COMPANY EARNINGS AND DEDUCTIONS SYSTEM</h2>
+                <p class="project-description">This system will compute all your earnings and deductions depending on your position.</p>
+                <div class="project-links">
+                    <a href="images/employers.PNG" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <img src="images/grADESs.PNG" alt="Project Title 3">
+            <div class="project-card-content">
+                <h2 class="project-title">COMPUTING GRADES SYSTEM</h2>
+                <p class="project-description">This program can tell if the student has the passing grade or failure.</p>
+                <div class="project-links">
+                    <a href="images/grADESs.PNG" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <div class="conts">
+       
+        <p>If you have any questions or project inquiries, feel free to send me a message.</p>
+    </div>
+    <footer id="our-team">
+        <p> Dalisay, Mark Vincent</p>
+        <p>&copyopyright</p>
+    </footer>
+</body>
+</html>
